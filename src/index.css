@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-[#121212] text-[#F2F2F2] min-h-screen;
+  }
+
+  ::selection {
+    background: #b6ff1a33;
+    color: #f2f2f2;
+  }
+}
+
+@layer utilities {
+  .glass-surface {
+    @apply bg-[#2B2B2B]/80 backdrop-blur-xl border border-white/5;
+  }
+
+  .neon-border {
+    box-shadow:
+      0 0 0 1px #b6ff1a99,
+      0 0 24px #b6ff1a66;
+  }
+
+  .wing-accent {
+    background-image: radial-gradient(circle at 0 0, #b6ff1a11 0, transparent 55%),
+      radial-gradient(circle at 100% 0, #d46a3a1a 0, transparent 55%);
+  }
+}
