@@ -71,17 +71,14 @@ function App() {
             </button>
           </div>
         </nav>
-
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="mt-1 rounded-b-2xl border border-t-0 border-white/10 bg-black/75 px-4 py-2 text-[11px] sm:text-xs text-white/70 shadow-[0_18px_40px_rgba(0,0,0,0.75)] backdrop-blur">
-            <span className="font-semibold uppercase tracking-[0.26em] text-[#B6FF1A]">
-              Coming Soon
-            </span>
-            <span className="ml-2">
-              The Locally Universal ecosystem is in active development. Join now to be part of the
-              first glocal wave.
-            </span>
-          </div>
+        <div className="border-t border-white/10 bg-black/80 text-[11px] text-center text-white/80 px-4 py-2 backdrop-blur-sm">
+          <span className="font-semibold tracking-[0.26em] uppercase text-[#B6FF1A]">
+            Coming Soon
+          </span>
+          <span className="mx-2 text-white/60">·</span>
+          <span className="text-[11px] text-white/70">
+            Locally Universal beta is on the way. Join the glocal movement early.
+          </span>
         </div>
       </header>
 
